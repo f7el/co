@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+{% block body %}
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Carbon Monoxide Awareness</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+<div class="jumbotron">
+    <div class="container">
+    <h1>Carbon Monoxide Awareness</h1>
+    <p>My ignorance of carbon monoxide could have killed someone. My brother recommended I create a website to
+       spread awareness and prevent potential disasters similar to my experience.</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>What is carbon monoxide (CO)?</h2>
+            <p><a class="btn btn-primary"  data-toggle="collapse" data-target="#whatis" role="button">View details &raquo;</a></button></p>
+            <div id="whatis" class="collapse">
+                    <p>CO is found in fumes produced any time you burn fuel in cars or trucks, small engines, stoves, lanterns, grills, fireplaces,
+                        gas ranges, or furnaces. CO can build up indoors and poison people and animals who breathe it.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h2>What are symptoms of CO poisoning?</h2>
+            <p><a class="btn btn-primary" data-toggle="collapse" data-target="#symptoms" role="button">View details &raquo;</a></p>
+
+            <div id="symptoms" class="collapse">
+                    <p>The most common symptoms of CO poisoning are headache, dizziness, weakness, upset stomach, vomiting,
+                        chest pain, and confusion. CO symptoms are often described as “flu-like.” If you breathe in a lot of
+                        CO it can make you pass out or kill you. People who are sleeping or drunk can die from CO poisoning before they have symptoms.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <h2>Prevention</h2>
+            <p><a class="btn btn-primary" data-toggle="collapse" data-target="#prevent" role="button">View details &raquo;</a></p>
+
+            <div id="prevent" class="collapse">
+                <ul>
+                    <li><p>Install a battery-operated or battery back-up CO detector in your home and check or replace the battery when
+                you change the time on your clocks each spring and fall. Place your detector where it will wake you up if it alarms, such
+                as outside your bedroom. Consider buying a detector with a digital readout. This detector can tell you the highest level of
+                CO concentration in your home in addition to alarming. Replace your CO detector every five years.</p></li>
+
+                    <li>Do not use portable flameless chemical heaters indoors.</li>
+                    <li>Have your heating system, water heater, and any other gas, oil, or coal burning appliances serviced by a qualified technician every year.</li>
+                    <li>Do not use portable flameless chemical heaters indoors.</li>
+                    <li>If you smell an odor from your gas refrigerator have an expert service it. An odor from your gas refrigerator can mean it could be leaking CO.</li>
+                    <li>When you buy gas equipment, buy only equipment carrying the seal of a national testing agency, such as Underwriters’ Laboratories.</li>
+                    <li>Make sure your gas appliances are vented properly. Horizontal vent pipes for appliances, such as a water heater, should go up slightly as they
+                        go toward outdoors, as shown below. This prevents CO from leaking if the joints or pipes aren’t fitted tightly.</li>
+                    <li>Have your chimney checked or cleaned every year. Chimneys can be blocked by debris. This can cause CO to build up inside your home or cabin.</li>
+                    <li>Never patch a vent pipe with tape, gum, or something else. This kind of patch can make CO build up in your home, cabin, or camper.
+                    <li>Never use a gas range or oven for heating. Using a gas range or oven for heating can cause a build up of CO inside your home, cabin, or camper.</li>
+                    <li>Never burn charcoal indoors. Burning charcoal - red, gray, black, or white - gives off CO.</li>
+                    <li>Never use a portable gas camp stove indoors. Using a gas camp stove indoors can cause CO to build up inside your home, cabin, or camper.</li>
+                    <li>Never use a generator inside your home, basement, or garage or less than 20 feet from any window, door, or vent.</li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>{# end row div #}
+          <hr>
+
+      <footer>
+        <p>Info referenced from http://www.cdc.gov/co/</p>
+      </footer>
+    </div> <!-- /container -->
+</div>{# end container div #}
+
+{% endblock %}
